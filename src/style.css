@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+.paciente-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: clamp(300px, 60%, 400px);
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgb(45, 1, 140);
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label{
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-block: 8px;
+  width: auto;
+  text-align: center;
+  outline: none;
+}
+
+input:focus{
+  box-shadow: 0 0 2px 2px rgb(91, 221, 26);
+}
+
+#age {
+  text-align: center;
+  appearance: textfield;         /* Propiedad estándar */
+  -moz-appearance: textfield;    /* Firefox */
+  -webkit-appearance: none;      /* Safari/Chrome en general */
+}
+
+#age::-webkit-inner-spin-button,
+#age::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+.sintoms{
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.sintoms:focus{
+  box-shadow: 0 0 2px 2px rgb(91, 221, 26);
+}
+
+.btn-submit{
+  border: 2px;
+  border-radius: 100vmax;
+  padding-inline: 8px;
+  padding-block: 3px;
+  margin-bottom: 10px; 
+  color: white;
+}
+
+.btn-submit:hover{
+  cursor: pointer;
+  background-color: indigo;
+}
+
+.lista-pacientes{
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  width: clamp(300px, 90%, 580px);
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgb(45, 1, 140);
+}
+
+.titulo-lista{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.texto-lista{
+  color: gray;
+  font-size: 15px;
+}
+
+.info-paciente{
+  width: 80%;
+  box-shadow: 0 0 5px 2px limegreen;
+  margin: 20px auto;
+  border-radius: 10px;
+  word-break: break-all;
+  text-align: left;
+  padding: 10px;
+}
