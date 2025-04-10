@@ -4,5 +4,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base:'/paciente-medicina/'
+  base:'paciente-medicina'
 })
