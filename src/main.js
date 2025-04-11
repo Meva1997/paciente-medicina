@@ -170,9 +170,15 @@ function editarPaciente(id){
     Object.assign(citaObj, pacienteEditar);
 
     document.querySelector('#btn-submit').textContent = 'Guardar Cambios'; 
+
+    window.scrollTo({
+      top: formulario.offsetTop - 180,
+      behavior: 'smooth'
+    });
   } else {
-    console.error('Paciente no encontrado');
+    console.error('Paciente no encontrado'); 
   }
+
 }
 
 function actualizarPacienteLocalStorage(){
