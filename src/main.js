@@ -68,6 +68,13 @@ function enviarFormulario(e){
   // Verificar si todos los campos están llenos
   if (!citaObj.name || !citaObj.email || !citaObj.age || !citaObj.consult || !citaObj.sintoms) {
     mensajeAlerta('Por favor, complete todos los campos.', formulario);
+
+    // Eliminar solo esa alerta después de 3 segundos
+    const alerta = formulario.querySelector('.alerta-error');
+    setTimeout(() => {
+      if (alerta) alerta.remove();
+    }, 3000);
+
     return; // Evitar que se agregue o edite el paciente si algún campo está vacío
   } 
 

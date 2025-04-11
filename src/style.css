@@ -34,7 +34,7 @@ input{
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   margin-block: 8px;
-  width: auto;
+  width: 250px;
   text-align: center;
   outline: none;
 }
@@ -110,4 +110,89 @@ input:focus{
   word-break: break-all;
   text-align: left;
   padding: 10px;
+}
+
+.header-div{
+  display: none;
+}
+
+@media (max-width: 700px){
+
+  .header-div{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: indigo;
+  }
+
+  .header-nav{
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    border-radius: 5px;
+    width:max-content;
+    gap: 10px;
+    text-align: center;
+    width: 50%;
+  }
+
+  .nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(33, 0, 56);
+    padding: 5px 10px;
+  }
+  
+  .nav-link2{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(33, 0, 56);
+    padding: 3px 8px;
+  }
+
+
+  .nav-link:hover{
+    cursor: pointer;
+    color: limegreen;
+  }
+
+  .nav-link2:hover{
+    cursor: pointer;
+    color: limegreen;
+  }
+
+  h1{
+    margin-top: 140px;
+    text-align: center;
+    margin-inline: auto;
+    word-break: break-all;
+    font-size: 20px;
+  }
+
+  .paciente-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  h2{
+    font-size: 20px;
+  }
+
+  input{
+    width: 250px;
+  }
+
+  .editar-btn{
+    padding-block: 0;
+    padding-inline: 5px;
+  }
+  .eliminar-btn{
+    padding-block: 0;
+    padding-inline: 5px;
+  }
 }
